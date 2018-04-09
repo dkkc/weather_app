@@ -8,10 +8,15 @@ import InputCity from './components/Input/InputCity'
 
 class App extends Component {
 
-state = {
-  searchCity: '',
-  tempData: []
-}
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchCity: '',
+      temperatureData: [],
+    }
+
+  }
+
 
 
 searchCityHandler = (event) => {
@@ -33,7 +38,7 @@ searchCityHandler = (event) => {
       <div>
         <h4> Wpisz miasto </h4>
         <InputCity city = {this.searchCityHandler}  />
-        <CityForecastedTempList tekst = {city} />  
+        
           
       </div> 
     );
