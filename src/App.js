@@ -19,10 +19,6 @@ searchCityHandler = (event) => {
     })
 
   }
-  this.clearInput();
-}
-
-clearInput = () => {
   
 }
 
@@ -35,9 +31,7 @@ clearInput = () => {
         <InputCity city = {this.searchCityHandler}  />
         <City tekst = {city} />  
           
-      </div>
-    
-     
+      </div> 
     );
   }
 }
