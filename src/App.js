@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 
-
+import City from './components/City/City';
 import CityForecastedTempList from './components/City/CityForecastedTempList';
 import InputCity from './components/Input/InputCity'
 
@@ -28,7 +29,7 @@ getForecastedWeather = () => {
 
 }
 
-onSearchCityHandler = (event) => {
+searchCityHandler = (event) => {
   if(event.keyCode === 13) {
   
     this.setState({
@@ -46,8 +47,8 @@ onSearchCityHandler = (event) => {
     return (
       <div>
         <h4> Wpisz miasto </h4>
-        <InputCity city = {this.onSearchCityHandler}  />
-        
+        <InputCity city = {this.searchCityHandler}  />
+        <City tekst = {city} />
           
       </div> 
     );
