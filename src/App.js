@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import City from './components/City/City';
+
+
+import CityForecastedTempList from './components/City/CityForecastedTempList';
 import InputCity from './components/Input/InputCity'
 
 
@@ -7,7 +9,8 @@ import InputCity from './components/Input/InputCity'
 class App extends Component {
 
 state = {
-  searchCity: ''
+  searchCity: '',
+  tempData: []
 }
 
 
@@ -23,13 +26,14 @@ searchCityHandler = (event) => {
 }
 
   render() {
-    const city = this.state.searchCity;
+    let city = this.state.searchCity;
+    
     console.log(this.state.searchCity);
     return (
       <div>
         <h4> Wpisz miasto </h4>
         <InputCity city = {this.searchCityHandler}  />
-        <City tekst = {city} />  
+        <CityForecastedTempList tekst = {city} />  
           
       </div> 
     );
