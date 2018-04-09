@@ -5,6 +5,7 @@ const city = (props) => {
         <div>
             <h1>{props.tekst}</h1>
             <p> {props.children} </p>
+            <img src = {props.weatherIcon} />
         </div>
     )
 }

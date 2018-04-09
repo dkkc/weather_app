@@ -10,16 +10,25 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+
     this.state = {
       searchCity: '',
       temperatureData: [],
+      currentWeatherUrl = 'https://api.weatherbit.io/v2.0/current?city=' + searchCity +'&lang=pl&key=3d6322a9ea164e99830e4e07fa8b5e2c',
+      forecastedWeatherUrl = 'https://api.weatherbit.io/v2.0/forecast/daily?city=' + searchCity +'&lang=pl&key=3d6322a9ea164e99830e4e07fa8b5e2c'
     }
 
   }
 
+getCurrenrWeather = () => {
 
+}
 
-searchCityHandler = (event) => {
+getForecastedWeather = () => {
+
+}
+
+onSearchCityHandler = (event) => {
   if(event.keyCode === 13) {
   
     this.setState({
@@ -37,7 +46,7 @@ searchCityHandler = (event) => {
     return (
       <div>
         <h4> Wpisz miasto </h4>
-        <InputCity city = {this.searchCityHandler}  />
+        <InputCity city = {this.onSearchCityHandler}  />
         
           
       </div> 
