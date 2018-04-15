@@ -1,5 +1,17 @@
 
-.img {
-    width: 500px;
-    height: 100px;
+.App {
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    background-color: rgba(200, 211, 214, 0.274);
+}
+
+@media (max-width: 500px) {
+    .App {
+        width: 500px;;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+        margin: 0;
+    }
 }

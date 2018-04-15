@@ -3,7 +3,7 @@ import uuid from 'uuid';
 import axios from 'axios';
 
 import classes from '../src/components/Weather/Weather.css';
-
+import style from './App.css';
 import InputCity from './components/Input/InputCity'
 import Header from './components/Header/Header';
 import Weather from './components/Weather/Weather';
@@ -35,24 +35,13 @@ class App extends Component {
        
     }
     
-    onSearchCityHandler = (event) => {
-        let city = event.target.value;
-        
+    onSearchCityHandler = (event) => {  
         if (event.keyCode === 13) {
-            
-            if (!event.target.value) {
-                this.setState({
-                    searchCity: ''
-                });
-            } else {
-                this.setState({
-                    searchCity: event.target.value
-                });
-                
-            }
+            this.setState({
+                searchCity: event.target.value
+            });
             this.getForecastWeather(event.target.value);
-        }
-        
+        }   
     }
 
     onShowWeather = (args) => {
@@ -85,26 +74,23 @@ class App extends Component {
             let newIcon = 'http://openweathermap.org/img/w/' +newIconCode+   '.png' // OpenWeatherMap weather icon
             let weekDay = new Date(ele.datetime)
             let day = this.getNameDay(weekDay);
+            let temp = ele.max_temp + '°C';
             return (
-                <Weather className = {classes.Weather}>
-                    
+                <Weather>   
                     <WeatherDetails 
                         day = {day} 
                         date = {ele.datetime}
                         city = {this.state.searchCity}
-                        temp = {ele.app_max_temp}
-                        
-                        description = {ele.weather.description}
-                        
+                        temp = {temp}
+                        url = {icon}
+                        description = {ele.weather.description}     
                     />
-                    {<img className = {classes.img} src= {icon} width="100" />}
-                    
                 </Weather>
             )  
         })
        
         return ( 
-            <div>
+            <div className = "App">
                 <Header /> 
                 <InputCity 
                 city_name = {city}

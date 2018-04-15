@@ -1,14 +1,15 @@
 import React from 'react';
-
+import header from './Header.css';
 
 
 const Header = (props) => {
     return (
-        <header>
+        <header className= "Header">
             <nav>
-                <img src = {props.url} alt ='logo'>
-                </img>
-
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>    
             </nav>
         </header>
     )
