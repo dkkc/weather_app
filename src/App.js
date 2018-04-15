@@ -44,10 +44,6 @@ class App extends Component {
         }   
     }
 
-    onShowWeather = (args) => {
-        this.getForecastWeather(args);
-    }
-
     getNameDay = (args) => {
         let  date = new Date(args);
          const days = [];
@@ -60,9 +56,9 @@ class App extends Component {
          days[6] = 'Sobota';
          days[0] = 'Niedziela';
          
-         let dayofweek = days[date.getDay()];
+         let dayOfWeek = days[date.getDay()];
         
-         return dayofweek;
+         return dayOfWeek;
      }
     render() {
        let city = this.state.searchCity;
@@ -83,8 +79,7 @@ class App extends Component {
                         city = {this.state.searchCity}
                         temp = {temp}
                         url = {icon}
-                        description = {ele.weather.description} 
-                         
+                        description = {ele.weather.description}      
                     />
                 </Weather>
             )  
