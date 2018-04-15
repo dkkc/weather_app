@@ -83,7 +83,8 @@ class App extends Component {
                         city = {this.state.searchCity}
                         temp = {temp}
                         url = {icon}
-                        description = {ele.weather.description}     
+                        description = {ele.weather.description} 
+                         
                     />
                 </Weather>
             )  
