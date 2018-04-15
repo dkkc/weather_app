@@ -8,7 +8,7 @@
 .Input > input {
     width: 250px;
     height: 25px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .Input > p {
@@ -19,4 +19,12 @@
 .Button {
     background-color: rgb(68, 68, 209);
     color: white;
+}
+
+
+@media (max-width: 500px) {
+    .Input {
+        display: block;
+        text-align: center;
+    }
 }
