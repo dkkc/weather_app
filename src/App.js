@@ -1,14 +1,13 @@
-import React, {
-    Component
-} from 'react';
+import React, {Component}  from 'react';
 import uuid from 'uuid';
 import axios from 'axios';
 
+import classes from '../src/components/Weather/Weather.css';
 
-import City from './components/City/City';
-import CityForecastedTempList from './components/City/CityForecastedTempList';
 import InputCity from './components/Input/InputCity'
-
+import Header from './components/Header/Header';
+import Weather from './components/Weather/Weather';
+import WeatherDetails from './components/Weather/WeatherDetails';
 
 
 class App extends Component {
@@ -18,33 +17,32 @@ class App extends Component {
 
         this.state = {
             searchCity: '',
-            data: {},
+            data: [],
             
-        }
-        
-        
+        }     
     }
-
-
-
     
-    
-    getForecastedWeather(city) {
-        const url = 'https://api.weatherbit.io/v2.0/forecast/daily?city=' + city + '&lang=pl&key=3d6322a9ea164e99830e4e07fa8b5e2c'
-        console.log('url',url);
-
-         fetch(url)
-             .then(response => response.json())
-             .then(res => this.setState({ data: res.data}))
-             .catch(err => console.log('błąd' , err));
+    getForecastWeather(city) {
+        axios.get('https://api.weatherbit.io/v2.0/forecast/daily?city='+ city +'&lang=pl&key=3d6322a9ea164e99830e4e07fa8b5e2c')
+        .then(res => {
+          const data = res.data;
+          this.setState({
+              searchCity: data.city_name,
+              data : data.data ,
+           
+          });
+        })
+       
     }
-
-    searchCityHandler = (event) => {
+    
+    onSearchCityHandler = (event) => {
         let city = event.target.value;
+        
         if (event.keyCode === 13) {
+            
             if (!event.target.value) {
                 this.setState({
-                    searchCity: 'Warszawa'
+                    searchCity: ''
                 });
             } else {
                 this.setState({
@@ -52,27 +50,68 @@ class App extends Component {
                 });
                 
             }
-
+            this.getForecastWeather(event.target.value);
         }
-       
+        
     }
 
- componentDidMount(){
-    // Make HTTP reques with Axios
-    
-  }
+    onShowWeather = (args) => {
+        this.getForecastWeather(args);
+    }
 
-    render() {
-        let city = this.state.searchCity;
-        console.log(this.state.searchCity);
+    getNameDay = (args) => {
+        let  date = new Date(args);
+         const days = [];
+
+         days[1] = 'Poniedziałek';
+         days[2] = 'Wtorek';
+         days[3] = 'Środa';
+         days[4] = 'Czwartek';
+         days[5] = 'Piątek';
+         days[6] = 'Sobota';
+         days[0] = 'Niedziela';
+         
+         let dayofweek = days[date.getDay()];
         
-        let temData = this.state.data;
-       console.log('TEMP',temData);
+         return dayofweek;
+     }
+    render() {
+       let city = this.state.searchCity;
+        const data = this.state.data.map((ele , id) => {
+            let iconCode = ele.weather.icon;
+            let newIconCode = iconCode.slice(1 ,4); // slice to get OpenWeatherMap icons
+            console.log(ele.app_max_temp , ele.datetime , iconCode , newIconCode);
+            let icon = 'https://www.weatherbit.io/static/img/icons/' + ele.weather.icon + '.png';
+            let newIcon = 'http://openweathermap.org/img/w/' +newIconCode+   '.png' // OpenWeatherMap weather icon
+            let weekDay = new Date(ele.datetime)
+            let day = this.getNameDay(weekDay);
+            return (
+                <Weather className = {classes.Weather}>
+                    
+                    <WeatherDetails 
+                        day = {day} 
+                        date = {ele.datetime}
+                        city = {this.state.searchCity}
+                        temp = {ele.app_max_temp}
+                        
+                        description = {ele.weather.description}
+                        
+                    />
+                    {<img className = {classes.img} src= {icon} width="100" />}
+                    
+                </Weather>
+            )  
+        })
+       
         return ( 
             <div>
-                <h4> Wpisz miasto </h4>  
-                <InputCity city = { this.searchCityHandler } />     
-               <CityForecastedTempList />
+                <Header /> 
+                <InputCity 
+                city_name = {city}
+                city = {(event) => this.onSearchCityHandler(event) } 
+                clicked = {(event) => this.onSearchCityHandler(event)}
+                />     
+                {data} 
                 
             </div >
         );
