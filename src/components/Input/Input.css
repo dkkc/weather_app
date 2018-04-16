@@ -13,7 +13,8 @@
 }
 
 .Input > p {
-    color: rgb(102, 102, 201);
+    /* color: rgb(102, 102, 201); */
+    color: white;
     font-size: 25px;
 }
 

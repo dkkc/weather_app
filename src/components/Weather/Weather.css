@@ -1,13 +1,11 @@
 .Weather {
     box-shadow: 50px solid #141414;
-    border: 3px solid #ad9393;
-    background: url('back.png') 0/cover;
+    border: 1px solid #ebdfdf;
     width: 500px;
     height: auto;
     margin:  0 auto;
-    display: flex;
-
-    flex-direction: row;
+    /* display: flex; */
+    
 }
 
 .Weather > ul {
@@ -15,7 +13,8 @@
 }
 .Weather li ,p {
     font-size: 20px;
-    color: rgba(131, 5, 5, 0.87);
+    /* color: rgba(131, 5, 5, 0.87); */
+    color: rgb(250, 242, 242);
     list-style-type: none;
     font-weight: bold;
 }
@@ -30,5 +29,13 @@
         width: auto;
         height: auto;
         margin: 0 auto;
+        display: block;
+    }
+
+    .Weather li ,p {
+        font-size: 20px;
+        color: #fff;
+        list-style-type: none;
+        font-weight: bold;
     }
 }
