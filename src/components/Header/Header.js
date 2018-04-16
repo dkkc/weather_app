@@ -1,10 +1,11 @@
 import React from 'react';
 import header from './Header.css';
-
+import logo from './weather_world.png';
 
 const Header = (props) => {
     return (
         <header className= "Header">
+            <img src = {logo} alt = 'logo' />
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>

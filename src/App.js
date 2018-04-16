@@ -31,6 +31,9 @@ class App extends Component {
               data : data.data ,
            
           });
+        }).catch((error) => {
+            alert('Wpisane miasto nie istnieje w naszej bazie danych');
+            window.location.reload();
         })
        
     }
