@@ -13,8 +13,7 @@
 }
 .Weather li ,p {
     font-size: 20px;
-    /* color: rgba(131, 5, 5, 0.87); */
-    color: rgb(250, 242, 242);
+    color: rgb(102, 102, 201);
     list-style-type: none;
     font-weight: bold;
 }
@@ -34,7 +33,7 @@
 
     .Weather li ,p {
         font-size: 20px;
-        color: #fff;
+        color: rgb(102, 102, 201);
         list-style-type: none;
         font-weight: bold;
     }
