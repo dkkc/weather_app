@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     text-align: center;
     width: 1200px;
-    background-color: rgba(200, 211, 214, 0.274);
+    
 }
 
 @media (max-width: 500px) {
