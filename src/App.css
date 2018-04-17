@@ -21,7 +21,7 @@ body {
 }
 @media (max-width: 500px) {
     .App {
-        width: 100%;
+        width: 100% ;
         height: auto;
         padding: 20px 0;
         text-align: center;
@@ -38,7 +38,7 @@ body {
 }
 @media (max-width: 960px) {
     .App {
-        
+        /* width: 100vw; */
         height: 100vh;
         padding: 20px 0;
         text-align: center;

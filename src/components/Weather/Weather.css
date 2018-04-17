@@ -41,10 +41,9 @@
 
 @media (max-width: 500px) {
     .Weather {
-        width: 80px;
+        /* width: 80px; */
         height: auto;  ;
         margin: 0 auto;
-        
     }
     .Weather > nav > ul {
         width: 100vw;
