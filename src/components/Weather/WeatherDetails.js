@@ -8,10 +8,7 @@ const WeatherDetails = (props) => {
         <ul >
             <li>{props.day} :  {props.date}</li>
             <li><img src = {props.url}/>{props.temp}</li>
-            {/* <li>  {props.city} </li> */}
             <li>   {props.description} </li>
-            
-            {/* { props.children } */}
         </ul>  
         </div>  
     )

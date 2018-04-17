@@ -30,4 +30,16 @@ body {
         display: -webkit-flex;
         display: flex;
     }
+}@media (max-width: 900px) {
+    .App {
+        width: 500px;;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+        margin: 0;
+    }
+    /* .App .Weather {
+        display: -webkit-flex;
+        display: flex;
+    } */
 }
