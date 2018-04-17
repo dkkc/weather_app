@@ -8,7 +8,7 @@ import InputCity from './components/Input/InputCity'
 import Header from './components/Header/Header';
 import Weather from './components/Weather/Weather';
 import WeatherDetails from './components/Weather/WeatherDetails';
-
+import Footer from '../src/components/Footer/Footer';
 
 class App extends Component {
 
@@ -97,7 +97,7 @@ class App extends Component {
                 clicked = {(event) => this.onSearchCityHandler(event)}
                 />     
                 {data} 
-                
+                <Footer />
             </div >
         );
     }

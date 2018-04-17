@@ -1,0 +1,12 @@
+.Footer {
+    width: auto;
+    height: 50px;
+    background-color: rgb(102,102,201);
+       
+}
+
+.Footer > p , a {
+    color: white;
+    line-height: 50px;
+    height: 100vh;
+}
