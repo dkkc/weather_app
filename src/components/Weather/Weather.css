@@ -1,5 +1,5 @@
 .Weather {
-    box-shadow: 50px solid rgb(204, 188, 188);
+ 
     border: 1px solid rgb(102,102,201);
     width: 200px;
     height: 220px;
@@ -32,7 +32,6 @@
     text-align: center;
 }
 .Weather p {
-    /* float: left; */
     display: flex;
     justify-content: flex-start;
 }
@@ -42,13 +41,7 @@
         width: auto;
         height: auto;
         margin: 0 auto;
-        /* display: block; */
+      
     }
 
-    /* .Weather li ,p {
-        font-size: 20px;
-        color: rgb(102, 102, 201);
-        list-style-type: none;
-        font-weight: bold;
-    } */
 }

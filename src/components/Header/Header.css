@@ -46,10 +46,10 @@
       margin: 0 auto;
     }
 
-    /* .Weather li ,p {
-        font-size: 20px;
-        color: rgb(102, 102, 201);
-        list-style-type: none;
-        font-weight: bold;
-    } */
+    .Header > nav > ul >li > a {
+        
+        font-size: 18px;
+       
+     }
+  
 }

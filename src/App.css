@@ -1,19 +1,18 @@
 
 body {
     box-sizing: border-box;
-   
     padding: 0;
     margin: 0 auto;
 }
 
 .App {
-    
     text-align: center;
     width: 100vw;
     margin: 0 auto;
     
 }
-.App .Weather {
+
+.App  .Weather {
 
     display: -webkit-inline-flex;
     display: inline-flex;
@@ -32,16 +31,17 @@ body {
         display: flex;
         width: 100%;
     }
-}@media (max-width: 900px) {
+
+}
+@media (max-width: 960px) {
     .App {
-        width: 500px;;
-        height: auto;
+        
+        height: 100vh;
         padding: 20px 0;
         text-align: center;
+        margin: 0 auto;
         /* margin: 0 auto; */
     }
-    /* .App .Weather {
-        display: -webkit-flex;
-        display: flex;
-    } */
+   
+  
 }

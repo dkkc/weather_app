@@ -14,8 +14,11 @@
  
 @media (max-width: 500px) {
     .Footer {
-      width: 100%;
+    
       margin: 0 auto;
     }
 
+    .Footer > p {
+        font-size: 15px;
+    }
 }

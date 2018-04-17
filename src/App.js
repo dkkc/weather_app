@@ -90,6 +90,7 @@ class App extends Component {
        
         return ( 
             <div className = "App">
+                <div classNmame = "Test">
                 <Header /> 
                 <InputCity 
                 city_name = {city}
@@ -98,6 +99,7 @@ class App extends Component {
                 />     
                 {data} 
                 <Footer />
+               </div> 
             </div >
         );
     }
