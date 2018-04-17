@@ -6,7 +6,7 @@ const WeatherDetails = (props) => {
     return (
         <div className = "Weather">
         <ul >
-            <p>{props.day} :  {props.date}</p>
+            <li>{props.day} :  {props.date}</li>
             <li><img src = {props.url}/></li>
             {/* <li>  {props.city} </li> */}
             <li>  {props.temp} {props.description} </li>

@@ -13,7 +13,11 @@ body {
     
     
 }
-
+.App .Weather {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    margin: 5px 5px;
+}
 @media (max-width: 500px) {
     .App {
         width: 500px;;
@@ -21,5 +25,9 @@ body {
         padding: 20px 0;
         text-align: center;
         margin: 0;
+    }
+    .App .Weather {
+        display: -webkit-flex;
+        display: flex;
     }
 }
