@@ -1,26 +1,27 @@
 
 body {
     box-sizing: border-box;
-    height: 100vh;
+   
     padding: 0;
-    margin: 0 ;
+    margin: 0 auto;
 }
 
 .App {
     
     text-align: center;
-    width: 1200px;
+    width: 100vw;
     margin: 0 auto;
     
 }
 .App .Weather {
+
     display: -webkit-inline-flex;
     display: inline-flex;
     margin: 5px 5px;
 }
 @media (max-width: 500px) {
     .App {
-        width: 500px;;
+        width: 100%;
         height: auto;
         padding: 20px 0;
         text-align: center;
@@ -29,6 +30,7 @@ body {
     .App .Weather {
         display: -webkit-flex;
         display: flex;
+        width: 100%;
     }
 }@media (max-width: 900px) {
     .App {
@@ -36,7 +38,7 @@ body {
         height: auto;
         padding: 20px 0;
         text-align: center;
-        margin: 0;
+        /* margin: 0 auto; */
     }
     /* .App .Weather {
         display: -webkit-flex;

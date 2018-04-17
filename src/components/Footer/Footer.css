@@ -1,12 +1,21 @@
 .Footer {
-    width: auto;
+    margin: 0 auto;
     height: 50px;
     background-color: rgb(102,102,201);
-       
+   width: 100vw;  
 }
 
 .Footer > p , a {
     color: white;
     line-height: 50px;
     font-size: 20px;
+}
+
+ 
+@media (max-width: 500px) {
+    .Footer {
+      width: 100%;
+      margin: 0 auto;
+    }
+
 }
