@@ -8,5 +8,5 @@
 .Footer > p , a {
     color: white;
     line-height: 50px;
-    height: 100vh;
+    font-size: 20px;
 }
