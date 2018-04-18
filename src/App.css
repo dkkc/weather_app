@@ -16,7 +16,7 @@ body {
 .test {
     height: auto;
     background: url('weather.png') 0/cover;
-    width: 1000px;
+    width: 950px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;

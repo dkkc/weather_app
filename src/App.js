@@ -10,6 +10,8 @@ import Weather from './components/Weather/Weather';
 import WeatherDetails from './components/Weather/WeatherDetails';
 import Footer from '../src/components/Footer/Footer';
 
+import { getDay } from './Tools/Date';
+
 class App extends Component {
 
     constructor(props) {
@@ -74,7 +76,7 @@ class App extends Component {
             let icon = 'https://www.weatherbit.io/static/img/icons/' + ele.weather.icon + '.png';
             let newIcon = 'http://openweathermap.org/img/w/' +newIconCode+   '.png' // OpenWeatherMap weather icon
             let weekDay = new Date(ele.datetime)
-            let day = this.getNameDay(weekDay);
+            let day = getDay(weekDay);
             let temp = ele.max_temp + '°C';
             return (
                 <Weather>   
