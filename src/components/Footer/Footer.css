@@ -1,7 +1,7 @@
 .Footer {
     margin: 0 auto;
     height: 50px;
-    background-color: rgb(102,102,201);
+    background: url('../../images.jpg') 0/ cover;
    width: 1200px  
 }
 

@@ -1,5 +1,6 @@
 .Weather {
-    border: 1px solid rgb(102,102,201);
+/*    border: 1px solid rgb(102,102,201);*/
+    border: 1px solid white;
     width: 200px;
     height: 220px;
     margin:  0 auto;
@@ -29,7 +30,8 @@
 }
 .Weather li ,p {
     font-size: 15px;
-    color: rgb(102, 102, 201);
+/*    color: rgb(102, 102, 201);*/
+    color: white;
     list-style-type: none;
     font-weight: bold;
     text-align: center;

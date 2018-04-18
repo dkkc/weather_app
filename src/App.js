@@ -43,6 +43,7 @@ class App extends Component {
             this.setState({
                 searchCity: event.target.value
             });
+            
             this.getForecastWeather(event.target.value);
         }   
     }
@@ -64,6 +65,7 @@ class App extends Component {
          return dayOfWeek;
      }
     render() {
+        
        let city = this.state.searchCity;
         const data = this.state.data.map((ele , id) => {
             let iconCode = ele.weather.icon;
@@ -90,17 +92,24 @@ class App extends Component {
        
         return ( 
             <div className = "App">
-                <div classNmame = "Test">
-                <Header /> 
+            <Header />
                 <InputCity 
                 city_name = {city}
                 city = {(event) => this.onSearchCityHandler(event) } 
                 clicked = {(event) => this.onSearchCityHandler(event)}
-                />     
-                {data} 
-                <Footer />
-               </div> 
+                />  
+                <div className = "test">
+                    {data} 
+                </div>
+                <Footer />  
+            
+            
+                 
+                
+                
             </div >
+              
+              
         );
     }
 }
