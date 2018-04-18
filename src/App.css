@@ -40,11 +40,19 @@ body {
     .App .Weather {
         display: -webkit-flex;
         display: flex;
-        width: 100%;
+        width: 350px;
         margin: 0;
-        height: 220;
+        height: 220px;
     }
-
+    .test {
+        height: auto;
+        background: url('weather.png') 0/cover;
+        display:flex;
+       width: 100vw;
+      
+        justify-content: center;
+        
+    }
 }
 @media (max-width: 960px) {
     .App {
