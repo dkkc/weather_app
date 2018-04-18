@@ -2,15 +2,15 @@ import React, {Component}  from 'react';
 import uuid from 'uuid';
 import axios from 'axios';
 
-import classes from '../src/components/Weather/Weather.css';
-import style from './App.css';
-import InputCity from './components/Input/InputCity'
-import Header from './components/Header/Header';
-import Weather from './components/Weather/Weather';
-import WeatherDetails from './components/Weather/WeatherDetails';
-import Footer from '../src/components/Footer/Footer';
+import classes from '../components/Weather/Weather.css';
+import style from '../containers/App.css';
+import InputCity from '../components/Input/InputCity'
+import Header from '../components/Header/Header';
+import Weather from '../components/Weather/Weather';
+import WeatherDetails from '../components/Weather/WeatherDetails';
+import Footer from '../components/Footer/Footer';
 
-import { getDay } from './Tools/Date';
+import { getDay } from '../Tools/Date';
 
 class App extends Component {
 
@@ -88,14 +88,7 @@ class App extends Component {
                     {data} 
                 </div>
                 <Footer />  
-            
-            
-                 
-                
-                
-            </div >
-              
-              
+            </div >          
         );
     }
 }

@@ -14,7 +14,7 @@ body {
 }
 
 .test {
-    height: auto;
+    
     background: url('weather.png') 0/cover;
     width: 950px;
     display: inline-flex;
@@ -45,7 +45,7 @@ body {
         height: 220px;
     }
     .test {
-        height: auto;
+        height: auto ;
         background: url('weather.png') 0/cover;
         display:flex;
        width: 100vw;
