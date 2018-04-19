@@ -3,9 +3,9 @@
     border: 1px solid white;
     width: 200px;
     height: 220px;
-    margin:  0 auto;
     display: flex;
     flex-direction: column;
+    margin: 5px 15px;
 }
 
 .Weather >  ul {
@@ -30,7 +30,6 @@
 }
 .Weather li ,p {
     font-size: 15px;
-/*    color: rgb(102, 102, 201);*/
     color: white;
     list-style-type: none;
     font-weight: bold;
@@ -43,8 +42,8 @@
 
 @media (max-width: 500px) {
     .Weather {
-        /* width: 80px; */
-        height: auto;  ;
+        width: 100vw;
+        height: auto;  
         margin: 0 auto;
     }
     .Weather > nav > ul {

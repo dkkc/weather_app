@@ -1,12 +1,12 @@
 import React from 'react';
-import calsses from './Input.css';
+import classes from './Input.css';
 
 
 const inputCity = (props) => {
     return (
-        <div className= "Input">
+        <div className= {classes.Input}>
             <p>Prognoza dla miejscowości: { props.city_name }</p>
-            <input type="text" onKeyUp={ props.city} placeholder = "wpisz nazwę miasta i naciśnij ENTER" />
+            <input type="text" onKeyUp={ props.onSearchCity} placeholder = "wpisz nazwę miasta i naciśnij ENTER" />
             {/* <button className = "Button" onClick = {props.clicked}>Pokaż</button> */}
         </div>    
         

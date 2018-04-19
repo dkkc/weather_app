@@ -1,10 +1,10 @@
 import React from 'react';
-import header from './Header.css';
+import classes from './Header.css';
 import logo from './weather_world.png';
 
 const Header = (props) => {
     return (
-        <header className= "Header">
+        <header className= {classes.Header}>
             <img src = {logo} alt = 'logo' />
             <nav>
                 <ul>

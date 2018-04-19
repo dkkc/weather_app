@@ -15,7 +15,7 @@ body {
 
 .test {
     
-    background: url('weather.png') 0/cover;
+    background: url('./weather.png') 0/cover;
     width: 950px;
     display: inline-flex;
     flex-direction: row;
@@ -23,12 +23,12 @@ body {
     justify-content: center;
     
 }
-.App  .Weather {
+/* .App  .Weather {
 
     display: -webkit-inline-flex;
     display: inline-flex;
     margin: 5px 15px;
-}
+} */
 @media (max-width: 500px) {
     .App {
         width: 100% ;
@@ -46,7 +46,7 @@ body {
     }
     .test {
         height: auto ;
-        background: url('weather.png') 0/cover;
+        background: url('./weather.png') 0/cover;
         display:flex;
        width: 100vw;
       
