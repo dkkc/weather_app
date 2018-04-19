@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import uuid from 'uuid';
 
-// import classes from '../components/Weather/Weather.css';
 import style from '../containers/App.css';
 import InputCity from '../components/Input/InputCity'
 import Header from '../components/Header/Header';
@@ -10,27 +10,26 @@ import WeatherDetails from '../components/Weather/WeatherDetails';
 import Footer from '../components/Footer/Footer';
 
 import { getDay } from '../Tools/Date';
-import { getTemp, getWeatherIcon  } from '../Tools/tools';
+import { getTemp, getWeatherIcon , FORECAST_DAILY_API , API_KEY  } from '../Tools/weatherAPI';
+
+
 class App extends Component {
 
     constructor(props) {
         super(props);
-
         this.state = {
             searchCity: '',
             data: [],
-
         }
     }
 
     getForecastWeather(city) {
-        axios.get('https://api.weatherbit.io/v2.0/forecast/daily?city=' + city + '&lang=pl&key=3d6322a9ea164e99830e4e07fa8b5e2c')
+        axios.get(FORECAST_DAILY_API + city + '&lang=pl&key=' + API_KEY)
             .then(res => {
                 const data = res.data;
                 this.setState({
                     searchCity: data.city_name,
                     data: data.data,
-
                 });
             }).catch((error) => {
                 alert('Wpisane miasto nie istnieje w naszej bazie danych');
@@ -53,27 +52,27 @@ class App extends Component {
         const data = this.state.data.map((ele, id) => {
             return (
                 <Weather>
-                    <WeatherDetails
-                        day={getDay(new Date(ele.datetime))}
+                    <WeatherDetails 
+                        day= { getDay(new Date(ele.datetime))}
                         date={ele.datetime}
-                        city={this.state.searchCity}
                         temp={getTemp(ele.max_temp)}
                         url={getWeatherIcon(ele.weather.icon)}
                         description={ele.weather.description}
+                        key = {this.state.id}
                     />
                 </Weather>
             )
         })
 
         return (
-            <div className= {style.App}>
+            <div className={style.App}>
                 <Header />
                 <InputCity
                     city_name={this.state.searchCity}
                     onSearchCity={(event) => this.onSearchCityHandler(event)}
                     clicked={(event) => this.onSearchCityHandler(event)}
                 />
-                <div className = {style.test    }>
+                <div className={style.test}>
                     {data}
                 </div>
                 <Footer />

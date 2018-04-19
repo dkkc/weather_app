@@ -1,5 +1,5 @@
 export const getDay = (args) => {
-    let date = new Date(args);
+    const date = new Date(args);
     const days = [];
 
     days[1] = 'Poniedziałek';
@@ -10,7 +10,7 @@ export const getDay = (args) => {
     days[6] = 'Sobota';
     days[0] = 'Niedziela';
 
-    let dayOfWeek = days[date.getDay()];
+    const dayOfWeek = days[date.getDay()];
 
     return dayOfWeek;
 }
