@@ -54,10 +54,9 @@ class App extends Component {
                     onSearchCity={(event) => this.onSearchCityHandler(event)}
                     clicked={(event) => this.onSearchCityHandler(event)}
                 />
-                <div className={style.test} >
-                    <ForecastWeather 
-                    data={this.state.data} 
-                    
+                <div className={style.Test} >
+                    <ForecastWeather
+                        data={this.state.data}
                     />
                 </div>
                 <Footer />
