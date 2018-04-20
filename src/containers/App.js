@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import uuid from 'uuid';
 
 import style from '../containers/App.css';
 import InputCity from '../components/Input/InputCity'
