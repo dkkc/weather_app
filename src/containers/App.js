@@ -5,12 +5,10 @@ import uuid from 'uuid';
 import style from '../containers/App.css';
 import InputCity from '../components/Input/InputCity'
 import Header from '../components/Header/Header';
-import Weather from '../components/Weather/Weather';
-import WeatherDetails from '../components/Weather/WeatherDetails';
 import Footer from '../components/Footer/Footer';
+import ForecastWeather from '../components/Weather/ForecastWeather';
 
-import { getDay } from '../Tools/Date';
-import { getTemp, getWeatherIcon , FORECAST_DAILY_API , API_KEY  } from '../Tools/weatherAPI';
+import { FORECAST_DAILY_API, API_KEY } from '../Tools/weatherAPI';
 
 
 class App extends Component {
@@ -49,21 +47,6 @@ class App extends Component {
     }
 
     render() {
-        const data = this.state.data.map((ele, id) => {
-            return (
-                <Weather>
-                    <WeatherDetails 
-                        day= { getDay(new Date(ele.datetime))}
-                        date={ele.datetime}
-                        temp={getTemp(ele.max_temp)}
-                        url={getWeatherIcon(ele.weather.icon)}
-                        description={ele.weather.description}
-                        key = {this.state.id}
-                    />
-                </Weather>
-            )
-        })
-
         return (
             <div className={style.App}>
                 <Header />
@@ -72,8 +55,11 @@ class App extends Component {
                     onSearchCity={(event) => this.onSearchCityHandler(event)}
                     clicked={(event) => this.onSearchCityHandler(event)}
                 />
-                <div className={style.test}>
-                    {data}
+                <div className={style.test} >
+                    <ForecastWeather 
+                    data={this.state.data} 
+                    
+                    />
                 </div>
                 <Footer />
             </div >
