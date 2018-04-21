@@ -21,7 +21,7 @@ class App extends Component {
     }
 
     getForecastWeather(city) {
-        axios.get(FORECAST_DAILY_API + city + '&lang=pl&key=' + API_KEY)
+        axios.get(FORECAST_DAILY_API + city + '&lang=pl&ip=auto&key=' + API_KEY)
             .then(res => {
                 const data = res.data;
                 this.setState({
