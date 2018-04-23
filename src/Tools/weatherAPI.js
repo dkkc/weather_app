@@ -22,5 +22,15 @@ export const getOpenWeatherMapIcon = (iconCode) => {
     return icon;
 }
 
+export const partOfTheDay = (pod) => {
+   if(pod === 'n') {
+       pod = 'Noc';
+   }else if (pod === 'd') {
+       pod = 'Dzień';
+   }
+
+   return pod;
+}
+
 
 
