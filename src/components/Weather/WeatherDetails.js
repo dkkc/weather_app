@@ -10,6 +10,7 @@ const WeatherDetails = (props) => {
                 <li><img src={props.url} alt="url" />{props.temp}</li>
                 <li>   {props.description} </li>
             </ul>
+            {props.children}
         </div>
     )
 }

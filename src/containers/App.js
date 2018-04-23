@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import style from '../containers/App.css';
+import style from './App.css';
 import InputCity from '../components/Input/InputCity'
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
@@ -22,6 +22,22 @@ class App extends Component {
         }
     }
 
+    componentDidMount() {
+        axios.get(CURRENT_WEATHER_BY_IP + '&lang=pl&key=' + API_KEY)
+        .then(res => {
+            const data = res.data;
+            this.setState({
+                searchCity: data.city_name,
+                data: data.data,
+            });
+            
+        }).catch((error) => {
+            alert('Nie można odczytać IP użądzenia')
+            window.location.reload();
+
+        })
+    }
+
     getForecastWeather(city) {
         axios.get(FORECAST_DAILY_API + city + '&lang=pl&key=' + API_KEY)
             .then(res => {
@@ -38,12 +54,13 @@ class App extends Component {
 
     }
 
+    
     _getCurrentWeather = () => {
 
         axios.get(CURRENT_WEATHER_BY_IP + '&lang=pl&key=' + API_KEY)
             .then(res => {
                 const data = res.data;
-                this.props.setState({
+                this.setState({
                     searchCity: data.city_name,
                     data: data.data,
                 });
@@ -73,7 +90,7 @@ class App extends Component {
 
     render() {
         let weather = null;
-        if (!this.showForcast) {
+        if (this.showForcast) {
             weather = <ForecastWeather
                 data={this.state.data}
             />
@@ -91,7 +108,7 @@ class App extends Component {
                 />
                 <div className={style.Test} >
                     {weather}
-
+                    {/* <CurrentWeather data={this.state.data} /> */}
                 </div>
                 <Footer />
             </div >
