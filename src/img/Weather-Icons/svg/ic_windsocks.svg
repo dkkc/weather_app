@@ -1,0 +1,10 @@
+<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.svg-weather{fill:#000000;}
+</style>
+<path id="Windsocks" class="svg-weather" d="M105.2,40.1l-40-12c-1.4-0.4-2.9,0-4,1L48,42.3V27c2.4-1.4,4-4,4-6.9c0-4.4-3.6-8-8-8
+	s-8,3.6-8,8c0,3,1.6,5.5,4,6.9v81H24c-2.2,0-4,1.8-4,4s1.8,4,4,4h40c2.2,0,4-1.8,4-4s-1.8-4-4-4H48V53.6l13.2,13.2
+	c0.8,0.8,1.8,1.2,2.8,1.2c0.4,0,0.8-0.1,1.1-0.2l40-12c1.7-0.5,2.8-2.1,2.9-3.8l0-8C108,42.2,106.9,40.6,105.2,40.1z M71.2,38.3
+	l10,3v13.3l-10,3V38.3z M53.6,47.9l9.5-9.5v19L53.6,47.9z M100,49l-10.8,3.2v-8.5l10.8,3.3L100,49z"/>
+</svg>

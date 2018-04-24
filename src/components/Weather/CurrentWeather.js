@@ -24,7 +24,6 @@ class CurrentWeather extends Component {
                         city_name={element.city_name}
                         day={getDay(new String(element.datetime).slice(0, 10))}
                         date={new String(element.datetime).slice(0, 10)}
-                        pod={partOfTheDay(element.pod)}
                         temp={getTemp(element.temp)}
                         app_temp={element.app_temp}
                         url={getWeatherIcon(element.weather.icon)}
@@ -33,6 +32,7 @@ class CurrentWeather extends Component {
                         sunrise={element.sunrise}
                         sunset={element.sunset}
                         ob_time={element.ob_time}
+                        pod={partOfTheDay(element.pod)}
                         key={index}
                     />
                 </Weather>

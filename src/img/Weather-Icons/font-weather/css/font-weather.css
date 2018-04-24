@@ -1,0 +1,190 @@
+/* Weather Icons Font 1.0 by @mReady - http://mready.net/en */
+ 
+@charset "UTF-8";
+
+@font-face {
+	font-family: "weather-icons-font";
+		src:url("../fonts/weather-icons-font.eot");
+		src:url("../fonts/weather-icons-font.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/weather-icons-font.woff") format("woff"),
+		url("../fonts/weather-icons-font.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "weather-icons-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ic-"]:before,
+[class*=" ic-"]:before {
+	font-family: "weather-icons-font" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ic-cloud-drops:before {
+  content: "\a007";
+}
+.ic-cloud-fog:before {
+  content: "\a029";
+}
+.ic-cloud-moon:before {
+  content: "\a006";
+}
+.ic-cloud-moon-drops:before {
+  content: "\a011";
+}
+.ic-cloud-moon-fog:before {
+  content: "\a031";
+}
+.ic-cloud-moon-rain:before {
+  content: "\a012";
+}
+.ic-cloud-moon-snow:before {
+  content: "\a018";
+}
+.ic-cloud-moon-snow-drops:before {
+  content: "\a015";
+}
+.ic-cloud-moon-thunder:before {
+  content: "\a021";
+}
+.ic-cloud-moon-thunder-drops:before {
+  content: "\a025";
+}
+.ic-cloud-moon-thunder-rain:before {
+  content: "\a027";
+}
+.ic-cloud-moon-wind:before {
+  content: "\a035";
+}
+.ic-cloud-rain:before {
+  content: "\a008";
+}
+.ic-cloud-snow:before {
+  content: "\a016";
+}
+.ic-cloud-snow-drops:before {
+  content: "\a013";
+}
+.ic-cloud-sun:before {
+  content: "\a005";
+}
+.ic-cloud-sun-drops:before {
+  content: "\a009";
+}
+.ic-cloud-sun-fog:before {
+  content: "\a030";
+}
+.ic-cloud-sun-rain:before {
+  content: "\a010";
+}
+.ic-cloud-sun-snow:before {
+  content: "\a017";
+}
+.ic-cloud-sun-snow-drops:before {
+  content: "\a014";
+}
+.ic-cloud-sun-thunder:before {
+  content: "\a020";
+}
+.ic-cloud-sun-thunder-drops:before {
+  content: "\a024";
+}
+.ic-cloud-sun-thunder-rain:before {
+  content: "\a026";
+}
+.ic-cloud-sun-wind:before {
+  content: "\a034";
+}
+.ic-cloud-thunder:before {
+  content: "\a019";
+}
+.ic-cloud-thunder-drops:before {
+  content: "\a022";
+}
+.ic-cloud-thunder-rain:before {
+  content: "\a023";
+}
+.ic-cloud-wind:before {
+  content: "\a033";
+}
+.ic-compass-e:before {
+  content: "\a047";
+}
+.ic-compass-n:before {
+  content: "\a045";
+}
+.ic-compass-s:before {
+  content: "\a046";
+}
+.ic-compass-w:before {
+  content: "\a048";
+}
+.ic-fahrenheit:before {
+  content: "\a050";
+}
+.ic-fog:before {
+  content: "\a028";
+}
+.ic-moon:before {
+  content: "\a002";
+}
+.ic-snow:before {
+  content: "\a038";
+}
+.ic-sun:before {
+  content: "\a001";
+}
+.ic-sun-down:before {
+  content: "\a036";
+}
+.ic-sun-up:before {
+  content: "\a037";
+}
+.ic-thermometer-high:before {
+  content: "\a042";
+}
+.ic-thermometer-low:before {
+  content: "\a040";
+}
+.ic-thermometer-medium:before {
+  content: "\a041";
+}
+.ic-tornado:before {
+  content: "\a039";
+}
+.ic-umbrella:before {
+  content: "\a043";
+}
+.ic-wind:before {
+  content: "\a032";
+}
+.ic-windsocks:before {
+  content: "\a044";
+}
+.ic-cloud-cloud:before {
+  content: "\a004";
+}
+.ic-cloud:before {
+  content: "\a003";
+}
+.ic-celsius:before {
+  content: "\a049";
+}

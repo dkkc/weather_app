@@ -89,15 +89,7 @@ class App extends Component {
     }
 
     render() {
-        let weather = null;
-        if (this.showForcast) {
-            weather = <ForecastWeather
-                data={this.state.data}
-            />
-        } else {
-
-            weather = <CurrentWeather data={this.state.data} />
-        }
+       
         return (
             <div className={style.App}>
                 <Header />
@@ -107,8 +99,7 @@ class App extends Component {
                     clicked={(event) => this.onCurrentWeather(event)}
                 />
                 <div className={style.Test} >
-                    {weather}
-                    {/* <CurrentWeather data={this.state.data} /> */}
+                    <CurrentWeather data={this.state.data} />
                 </div>
                 {/* <Footer /> */}
             </div >

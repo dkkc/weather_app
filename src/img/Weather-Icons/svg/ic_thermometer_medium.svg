@@ -1,0 +1,11 @@
+<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.svg-weather{fill:#000000;}
+</style>
+<path id="Alcohol_1_" class="svg-weather" d="M68,82.9V53c0-2.2-1.8-4-4-4s-4,1.8-4,4v29.9c-3,1.5-5,4.5-5,8.1c0,5,4,9,9,9s9-4,9-9
+	C73,87.5,71,84.4,68,82.9z"/>
+<path id="Glass_1_" class="svg-weather" d="M80,77.4V32c0-8.8-7.2-16-16-16s-16,7.2-16,16v45.4c-3.2,3.8-5,8.5-5,13.6c0,11.6,9.4,21,21,21
+	s21-9.4,21-21C85,85.9,83.2,81.1,80,77.4z M64,104c-7.2,0-13-5.8-13-13c0-4.1,1.9-7.8,5-10.2V32c0-4.4,3.6-8,8-8s8,3.6,8,8v48.8
+	c3.1,2.4,5,6.2,5,10.2C77,98.2,71.2,104,64,104z"/>
+</svg>

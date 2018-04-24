@@ -1,0 +1,13 @@
+<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.svg-weather{fill:#000000;}
+</style>
+<path id="Alcohol_2_" class="svg-weather" d="M54.5,82.9V32c0-2.2-1.8-4-4-4s-4,1.8-4,4v50.9c-3,1.5-5,4.5-5,8.1c0,5,4,9,9,9s9-4,9-9
+	C59.5,87.5,57.5,84.4,54.5,82.9z"/>
+<path id="Glass_2_" class="svg-weather" d="M66.5,77.4V32c0-8.8-7.2-16-16-16s-16,7.2-16,16v45.4c-3.2,3.8-5,8.5-5,13.6c0,11.6,9.4,21,21,21
+	s21-9.4,21-21C71.5,85.9,69.7,81.1,66.5,77.4z M50.5,104c-7.2,0-13-5.8-13-13c0-4.1,1.9-7.8,5-10.2V32c0-4.4,3.6-8,8-8s8,3.6,8,8
+	v48.8c3.1,2.4,5,6.2,5,10.2C63.5,98.2,57.7,104,50.5,104z"/>
+<path id="_x2B_" class="svg-weather" d="M94.5,40h-4v-4c0-2.2-1.8-4-4-4s-4,1.8-4,4v4h-4c-2.2,0-4,1.8-4,4s1.8,4,4,4h4v4c0,2.2,1.8,4,4,4
+	s4-1.8,4-4v-4h4c2.2,0,4-1.8,4-4S96.7,40,94.5,40z"/>
+</svg>

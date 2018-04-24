@@ -1,0 +1,13 @@
+<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.svg-weather{fill:#000000;}
+</style>
+<path id="Tornado_7_" class="svg-weather" d="M72,92H60c-2.2,0-4-1.8-4-4s1.8-4,4-4h12c2.2,0,4,1.8,4,4S74.2,92,72,92z"/>
+<path id="Tornado_6_" class="svg-weather" d="M80,80H54c-2.2,0-4-1.8-4-4s1.8-4,4-4h26c2.2,0,4,1.8,4,4S82.2,80,80,80z"/>
+<path id="Tornado_5_" class="svg-weather" d="M90,68H60c-2.2,0-4-1.8-4-4s1.8-4,4-4h30c2.2,0,4,1.8,4,4S92.2,68,90,68z"/>
+<path id="Tornado_4_" class="svg-weather" d="M98,56H54c-2.2,0-4-1.8-4-4s1.8-4,4-4h44c2.2,0,4,1.8,4,4S100.2,56,98,56z"/>
+<path id="Tornado_3_" class="svg-weather" d="M86,44H42c-2.2,0-4-1.8-4-4s1.8-4,4-4h44c2.2,0,4,1.8,4,4S88.2,44,86,44z"/>
+<path id="Tornado_2_" class="svg-weather" d="M92,32H30c-2.2,0-4-1.8-4-4s1.8-4,4-4h62c2.2,0,4,1.8,4,4S94.2,32,92,32z"/>
+<path id="Tornado_1_" class="svg-weather" d="M73,104h-4c-2.2,0-4-1.8-4-4s1.8-4,4-4h4c2.2,0,4,1.8,4,4S75.2,104,73,104z"/>
+</svg>

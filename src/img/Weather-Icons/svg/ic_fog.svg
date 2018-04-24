@@ -1,0 +1,15 @@
+<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.svg-weather{fill:#000000;}
+</style>
+<g id="Fog_6_">
+	<path id="Fog_5_" class="svg-weather" d="M28.6,84h18c2.2,0,4-1.8,4-4s-1.8-4-4-4h-18c-2.2,0-4,1.8-4,4S26.4,84,28.6,84z"/>
+	<path id="Fog_4_" class="svg-weather" d="M58.6,84h52c2.2,0,4-1.8,4-4s-1.8-4-4-4h-52c-2.2,0-4,1.8-4,4S56.4,84,58.6,84z"/>
+</g>
+<path id="Fog" class="svg-weather" d="M99.4,68h-82c-2.2,0-4-1.8-4-4s1.8-4,4-4h82c2.2,0,4,1.8,4,4S101.6,68,99.4,68z"/>
+<g id="Fog_1_">
+	<path id="Fog_2_" class="svg-weather" d="M110.6,52h-18c-2.2,0-4-1.8-4-4s1.8-4,4-4h18c2.2,0,4,1.8,4,4S112.8,52,110.6,52z"/>
+	<path id="Fog_3_" class="svg-weather" d="M80.6,52h-52c-2.2,0-4-1.8-4-4s1.8-4,4-4h52c2.2,0,4,1.8,4,4S82.8,52,80.6,52z"/>
+</g>
+</svg>
