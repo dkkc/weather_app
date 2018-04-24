@@ -6,9 +6,12 @@ const CurrentWeatherDetails = (props) => {
     return (
         <div className={classes.CurrentWeather}  >
             <ul >
-                <li> {props.city_name} </li>
-                <li> {props.day} :  {props.date}   </li>
+            <header>
+                <li> {props.city_name} ,</li>
+                <li> {props.day} :  {props.date} ,  </li>
                 <li>  {props.pod}  </li>
+            </header>
+                
                 <li> <img src={props.url} alt="url" /> {props.temp} </li>
                 <li>   {props.description} </li>
                 <li>  Temperatura odczuwalna  {props.app_temp} </li>

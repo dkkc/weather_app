@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const API_KEY = '3d6322a9ea164e99830e4e07fa8b5e2c'
 export const WEATHER_ICON_API = 'https://www.weatherbit.io/static/img/icons/';
 export const OPEN_WEATHER_MAP_ICON = 'http://openweathermap.org/img/w/';
@@ -23,13 +25,16 @@ export const getOpenWeatherMapIcon = (iconCode) => {
 }
 
 export const partOfTheDay = (pod) => {
-   if(pod === 'n') {
-       pod = 'Noc';
-   }else if (pod === 'd') {
-       pod = 'Dzień';
+//   if(pod === 'n') {
+////       return <img src='moon.png' />;
+//   } 
+        
+       
+       if (pod === 'd') {
+       return <img src='./sun.png' alt='sun'/>;
+      
+       
    }
-
-   return pod;
 }
 
 

@@ -9,12 +9,27 @@
 }
 
 .CurrentWeather {
-    border: 1px solid white;
+    
     width: 600px;
     height: auto;
     display: flex;
     flex-direction: column;
     margin: 5px 15px;
+}
+.CurrentWeather > ul { 
+    list-style-type: none;
+}
+
+.CurrentWeather > ul > header { 
+    display: flex;
+    justify-content: flex-start;
+}
+
+.CurrentWeather > ul > header >li { 
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    
 }
 
 .Weather >  ul {
