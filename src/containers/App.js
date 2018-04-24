@@ -101,7 +101,7 @@ class App extends Component {
                 <div className={style.Test} >
                     <CurrentWeather data={this.state.data} />
                 </div>
-                {/* <Footer /> */}
+                <Footer />
             </div >
         );
     }
