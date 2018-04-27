@@ -32,9 +32,8 @@ export const getOpenWeatherMapIcon = (iconCode) => {
 
 export const partOfTheDay = (pod) => {
     if (pod === 'd') {
-
         return <img className={classes.Img} src={
-            moon
+            day
         }
         />
     } else if (pod === 'n') {

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import Weather from './Weather';
 import CurrentWeatherDetails from './CurrentWeatherDetails';
-
+import InputCity from '../Input/InputCity';
 import { getDay } from '../../Tools/Date';
-import { getTemp, getWeatherIcon , partOfTheDay} from '../../Tools/weatherAPI';
+import { getTemp, getWeatherIcon, partOfTheDay } from '../../Tools/weatherAPI';
 
 
 class CurrentWeather extends Component {
@@ -12,14 +12,21 @@ class CurrentWeather extends Component {
         super(props);
     }
 
-    
+
 
     _renderCurrentWeatherResults = () => {
         return this.props.data.map((element, index) => {
             return (
-                
-                <Weather>
-                   
+                <div className=''>
+                    <header>
+                    <InputCity
+                        city_name={element.city_name}
+                        onSearchCity={(event) => this.onSearchCityHandler(event)}
+                        clicked={(event) => this.onCurrentWeather(event)}
+                    />
+
+                    </header>    
+                    
                     <CurrentWeatherDetails
                         city_name={element.city_name}
                         day={getDay(new String(element.datetime).slice(0, 10))}
@@ -35,7 +42,8 @@ class CurrentWeather extends Component {
                         pod={partOfTheDay(element.pod)}
                         key={index}
                     />
-                </Weather>
+                </div>
+
             )
         })
 

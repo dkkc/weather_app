@@ -18,6 +18,7 @@
 }
 .CurrentWeather > ul { 
     list-style-type: none;
+    padding: 0;
 }
 
 .CurrentWeather > ul > header { 
@@ -40,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 0;
+   
 }
 .Weather > ul > li {
     
@@ -65,14 +66,18 @@
 }
 
 @media (max-width: 500px) {
-    .Weather {
-        width: 100vw;
-        height: auto;  
-        margin: 0 auto;
-    }
-    .Weather > nav > ul {
-        width: 100vw;
-        padding: 0;
-    }
+  .CurrentWeather {
+      width: 100%;
+  }
+
+  .CurrentWeather > ul > header { 
+    display: flex;
     
+}
+  .CurrentWeather > ul > header >li { 
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    
+}
 }

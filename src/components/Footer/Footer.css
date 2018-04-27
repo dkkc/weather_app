@@ -2,7 +2,7 @@
     margin: 0 auto;
     height: 50px;
     background: url('./weather.png') 0/ cover;
-   width: 1200px  
+    width: 100%;    
 }
 
 .Footer > p , a {
@@ -14,11 +14,21 @@
  
 @media (max-width: 500px) {
     .Footer {
-    width: 100%;;
+    
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: auto;
     }
 
     .Footer > p {
         font-size: 15px;
+    }
+
+    .Footer > p , a {
+        color: white;
+        /* line-height: 50px; */
+        font-size: 10px;
     }
 }

@@ -91,17 +91,20 @@ class App extends Component {
     render() {
        
         return (
+            
             <div className={style.App}>
                 <Header />
-                <InputCity
+                {/* <InputCity
                     city_name={this.state.searchCity}
                     onSearchCity={(event) => this.onSearchCityHandler(event)}
                     clicked={(event) => this.onCurrentWeather(event)}
-                />
+                /> */}
                 <div className={style.Test} >
                     <CurrentWeather data={this.state.data} />
                 </div>
+                <div>
                 <Footer />
+                </div>
             </div >
         );
     }

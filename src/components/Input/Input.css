@@ -26,14 +26,21 @@
 
 @media (max-width: 500px) {
     .Input {
-        display: block;
-        text-align: center;
-      
+        display: flex;
+        /* text-align: center; */
+        flex-direction: column;
+        flex-wrap: wrap;
+      width: 100%;
     }
-
     .Input > input {
-        width: 300px;
-        height: 40px;
-        margin: 0;
+        width: 100vw;
+        height: 35px;
+        padding: 0;
+        margin: 0 auto;
+        border: 1px solid blue;
+    }
+    .Input  > p {
+        font-size: 15px;
+        width: auto;
     }
 }
